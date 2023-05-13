@@ -459,6 +459,10 @@ address a:focus {
   margin-bottom: 20px;
   padding-inline-start: 0px;
 }
+.portfolio-buttons button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-buttons li + li {
   margin-left: 8px;
 }
