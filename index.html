@@ -59,7 +59,9 @@
       <section class="hero-section">
         <div class="container">
           <h1 id="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button type="button" class="button">Request our services</button>
+          <button type="button" class="button" data-modal-open>
+            Request our services
+          </button>
         </div>
       </section>
 
@@ -131,26 +133,29 @@
         <div class="container">
           <h2>What we do</h2>
           <ul>
-            <li>
+            <li class="what-we-do-img">
               <img
                 src="./images/PC-img.jpg"
                 alt="We working on computer"
                 width="370"
               />
+              <p>DESKTOP APPS</p>
             </li>
-            <li>
+            <li class="what-we-do-img">
               <img
                 src="./images/Phone-img.jpg"
                 alt="We working on phone"
                 width="370"
               />
+              <p>Mobile APPS</p>
             </li>
-            <li>
+            <li class="what-we-do-img">
               <img
                 src="./images/Tablet-img.jpg"
                 alt="We working on tablet"
                 width="370"
               />
+              <p>DESIGN SOLUTIONS</p>
             </li>
           </ul>
         </div>
@@ -410,7 +415,9 @@
               </svg>
             </a>
             <a href="https://twitter.com/" class="icon" aria-label="Twitter">
-              <svg><use href="./images/icons.svg.svg#icon-twitter"></use></svg>
+              <svg>
+                <use href="./images/icons.svg.svg#icon-twitter"></use>
+              </svg>
             </a>
             <a href="https://facebook.com/" class="icon" aria-label="Facebook"
               ><svg>
@@ -418,11 +425,23 @@
               </svg>
             </a>
             <a href="https://linkedin.com/" class="icon" aria-label="LinkedIn">
-              <svg><use href="./images/icons.svg.svg#icon-linkedin"></use></svg>
+              <svg>
+                <use href="./images/icons.svg.svg#icon-linkedin"></use>
+              </svg>
             </a>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <div>
+          <button class="close-btn" data-modal-close>&times;</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
