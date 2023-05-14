@@ -92,6 +92,9 @@ ul {
   bottom: 5px;
   left: 0;
 }
+.nav-links .current-page-text-color {
+  color: #2196f3;
+}
 
 .header-adress a {
   font-weight: 500;
