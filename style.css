@@ -79,6 +79,19 @@ ul {
   margin-block-end: 0;
   margin-block-start: 0;
 }
+.nav-links li {
+  position: relative;
+}
+.nav-links .current-page::after {
+  position: absolute;
+  content: "";
+  background: #2196f3;
+  border-radius: 2px;
+  height: 4px;
+  width: 100%;
+  bottom: 5px;
+  left: 0;
+}
 
 .header-adress a {
   font-weight: 500;
@@ -119,26 +132,7 @@ ul {
   padding-inline-start: 0;
   margin-left: 330px;
 }
-.main-navigation li {
-  position: relative;
-}
 
-.nav-links a:hover::after,
-.nav-links a:focus::after {
-  display: inline;
-}
-
-.nav-links a::after {
-  display: none;
-  position: absolute;
-  content: "";
-  background: #2196f3;
-  border-radius: 2px;
-  height: 4px;
-  width: 100%;
-  bottom: 5px;
-  left: 0;
-}
 .nav-links a:hover,
 .nav-links a:focus,
 .header-adress a:hover,
